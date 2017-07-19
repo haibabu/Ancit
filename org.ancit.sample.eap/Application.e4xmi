@@ -6,6 +6,7 @@
         <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.partsashcontainer.sample">
           <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.partstack.sample">
             <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.part.sample" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.parts.SamplePart" label="Sample Part"/>
+            <children xsi:type="basic:Part" xmi:id="_eLjbMGyfEeeMc8HBVrI3fA" elementId="org.ancit.sample.eap.part.newpartstack" label="New Part Stack" tooltip="New Part Stack"/>
           </children>
         </children>
       </children>
@@ -27,7 +28,6 @@
       </children>
     </trimBars>
   </children>
-  <children xsi:type="basic:Window" xmi:id="_z-W1oGyeEeeMc8HBVrI3fA" elementId="org.ancit.sample.eap.window.0"/>
   <handlers xmi:id="_6wlLfcgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handler.quitCommand" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.QuitHandler" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handler.openCommand" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handler.saveCommand" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
