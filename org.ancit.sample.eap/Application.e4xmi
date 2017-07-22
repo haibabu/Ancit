@@ -11,11 +11,14 @@
         </children>
       </children>
     </children>
+    <handlers xmi:id="_raA28G1XEeeaxPrGsyHONw" elementId="org.ancit.sample.eap.handler.0" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.MyHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
     <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
       <children xsi:type="menu:Menu" xmi:id="_6wlLisgZEeSyMNYR5xypkQ" elementId="file" label="File">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLi8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.file.open" label="Open" iconURI="platform:/plugin/org.ancit.sample.eap/icons/sample.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjMgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.save" label="Save" iconURI="platform:/plugin/org.ancit.sample.eap/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.quit" label="Quit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_NhDeIG6fEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handledmenuitem.myhandler" label="MyHandler" command="_Idv8UG6fEeeLT4WcjJJlYQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_qtTQsG6xEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handledmenuitem.myservice" label="MyService" command="_oAXJUG6xEeeLT4WcjJJlYQ"/>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
@@ -32,6 +35,8 @@
   <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handler.openCommand" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handler.saveCommand" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handler.aboutCommand" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_FFGlgG6fEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handler.myhandler" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.MyHandler" command="_Idv8UG6fEeeLT4WcjJJlYQ"/>
+  <handlers xmi:id="_WToTwG6vEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handler.1" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.MyServiceCallOrder" command="_oAXJUG6xEeeLT4WcjJJlYQ"/>
   <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
     <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
     <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
@@ -42,10 +47,13 @@
     <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
+  <descriptors xmi:id="_D0QscGyhEeeMc8HBVrI3fA" elementId="org.ancit.sample.eap.partdescriptor.mypartdescriptors" label="MyPartDescriptors" tooltip="MyPartDescriptors"/>
   <commands xmi:id="_6wlLfMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
   <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
   <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_Idv8UG6fEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.command.myhandler" commandName="MyHandler"/>
+  <commands xmi:id="_oAXJUG6xEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.command.myservice" commandName="MyService"/>
   <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -53,4 +61,5 @@
   <addons xmi:id="_6wlLdsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_chuMsG66EeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.addon.0" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.MyServiceAddon"/>
 </application:Application>
