@@ -20,6 +20,10 @@
                name="appName"
                value="org.ancit.sample.eap">
          </property>
+         <property
+               name="rendererFactoryUri"
+               value="bundleclass://org.ancit.sample.eap.renderer.swt/org.ancit.sample.eap.renderer.swt.MyRendererFactory">
+         </property>
       </product>
    </extension>
 
