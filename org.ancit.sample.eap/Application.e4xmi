@@ -5,8 +5,16 @@
       <children xsi:type="advanced:Perspective" xmi:id="_6wlLkcgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.perspective.sample">
         <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.partsashcontainer.sample">
           <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.partstack.sample">
-            <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.part.sample" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.parts.SamplePart" label="Sample Part"/>
-            <children xsi:type="basic:Part" xmi:id="_eLjbMGyfEeeMc8HBVrI3fA" elementId="org.ancit.sample.eap.part.newpartstack" label="New Part Stack" tooltip="New Part Stack"/>
+            <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.part.sample" contributionURI="bundleclass://org.ancit.sample.eap.ui/org.ancit.sample.eap.ui.parts.EmployeeView" label="Address Book View">
+              <menus xsi:type="menu:PopupMenu" xmi:id="_PwGusHBXEee8IKKUERjBNg" elementId="org.ancit.sample.eap.popupmenu.test" label="Test">
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_Rp3ssHBXEee8IKKUERjBNg" elementId="org.ancit.sample.eap.handledmenuitem.0" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+              </menus>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Qi3l8HDnEeeLMbSltPyK_Q" elementId="org.ancit.sample.eap.partsashcontainer.0">
+          <children xsi:type="basic:PartStack" xmi:id="_sGkykHDnEeeLMbSltPyK_Q" elementId="org.ancit.sample.eap.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_tfCaUHDnEeeLMbSltPyK_Q" elementId="org.ancit.sample.eap.part.addresseditor" contributionURI="bundleclass://org.ancit.sample.eap.ui/org.ancit.sample.eap.ui.parts.EmployeeEditor" label="Address Editor"/>
           </children>
         </children>
       </children>
@@ -19,11 +27,22 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.quit" label="Quit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_NhDeIG6fEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handledmenuitem.myhandler" label="MyHandler" command="_Idv8UG6fEeeLT4WcjJJlYQ"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_qtTQsG6xEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handledmenuitem.myservice" label="MyService" command="_oAXJUG6xEeeLT4WcjJJlYQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_vn0H4HDrEeeLMbSltPyK_Q" elementId="org.ancit.sample.eap.handledmenuitem.newwizard" label="New Wizard" command="_1EPw0HDqEeeLMbSltPyK_Q"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_wEMQIHESEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.handledmenuitem.annotation" label="Annotation" command="_ih_2cHESEeeJWYOUYKQwLg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_QPxA8HEtEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.handledmenuitem.themeswitch" label="Theme Switch" command="_ud2loHEsEeeJWYOUYKQwLg"/>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
       </children>
     </mainMenu>
+    <sharedElements xsi:type="basic:Part" xmi:id="_49sL0HAfEeemG4eUdX2iDg" elementId="org.ancit.examples.rcp.ui.views.MyView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="My Eclipse 3.x View" iconURI="platform:/plugin/org.ancit.examples.rcp.ui/icons/sample.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.ancit.examples.rcp.ui</tags>
+      <menus xmi:id="_49sL0XAfEeemG4eUdX2iDg" elementId="org.ancit.examples.rcp.ui.views.MyView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_49sL0nAfEeemG4eUdX2iDg" elementId="org.ancit.examples.rcp.ui.views.MyView"/>
+    </sharedElements>
     <trimBars xmi:id="_6wlLlcgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.trimbar.top">
       <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
         <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.trimbar.top.open" iconURI="platform:/plugin/org.ancit.sample.eap/icons/sample.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
@@ -37,6 +56,9 @@
   <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handler.aboutCommand" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_FFGlgG6fEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handler.myhandler" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.MyHandler" command="_Idv8UG6fEeeLT4WcjJJlYQ"/>
   <handlers xmi:id="_WToTwG6vEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.handler.1" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.MyServiceCallOrder" command="_oAXJUG6xEeeLT4WcjJJlYQ"/>
+  <handlers xmi:id="_zrZukHDqEeeLMbSltPyK_Q" elementId="org.ancit.sample.eap.handler.2" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.NewContactHandler" command="_1EPw0HDqEeeLMbSltPyK_Q"/>
+  <handlers xmi:id="_hEjoEHESEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.handler.3" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.MyAnnotation" command="_ih_2cHESEeeJWYOUYKQwLg"/>
+  <handlers xmi:id="_tL4ncHEsEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.handler.4" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.ThemeSwitch" command="_ud2loHEsEeeJWYOUYKQwLg"/>
   <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
     <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
     <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
@@ -47,13 +69,22 @@
     <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
-  <descriptors xmi:id="_D0QscGyhEeeMc8HBVrI3fA" elementId="org.ancit.sample.eap.partdescriptor.mypartdescriptors" label="MyPartDescriptors" tooltip="MyPartDescriptors"/>
+  <descriptors xmi:id="_D0QscGyhEeeMc8HBVrI3fA" elementId="org.ancit.sample.eap.partdescriptor.mypartdescriptors" label="MyPartDescriptors" tooltip="MyPartDescriptors" allowMultiple="true"/>
+  <descriptors xmi:id="_yJR4wHAfEeemG4eUdX2iDg" elementId="org.ancit.examples.rcp.ui.views.MyView" label="My Eclipse 3.x View" iconURI="platform:/plugin/org.ancit.examples.rcp.ui/icons/sample.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_yJR4wXAfEeemG4eUdX2iDg" elementId="org.ancit.examples.rcp.ui.views.MyView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_yJR4wnAfEeemG4eUdX2iDg" elementId="org.ancit.examples.rcp.ui.views.MyView"/>
+  </descriptors>
   <commands xmi:id="_6wlLfMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
   <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
   <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
   <commands xmi:id="_Idv8UG6fEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.command.myhandler" commandName="MyHandler"/>
   <commands xmi:id="_oAXJUG6xEeeLT4WcjJJlYQ" elementId="org.ancit.sample.eap.command.myservice" commandName="MyService"/>
+  <commands xmi:id="_1EPw0HDqEeeLMbSltPyK_Q" elementId="org.ancit.sample.eap.command.newcontact" commandName="New Contact" description="New Contact"/>
+  <commands xmi:id="_ih_2cHESEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.command.annotation" commandName="Annotation"/>
+  <commands xmi:id="_ud2loHEsEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.command.themeswitch" commandName="Theme Switch"/>
   <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

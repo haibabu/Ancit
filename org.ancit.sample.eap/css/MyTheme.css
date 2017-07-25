@@ -1,0 +1,14 @@
+Label {
+    font: Verdana 25px;
+    color: black;
+}
+Composite Label {
+    color: black;
+}
+Text {
+    font: Verdana 8px;
+}
+
+Shell {
+    background-color:blue 40% green 20%;
+}

@@ -13,10 +13,6 @@
                value="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.E4LifeCycle">
          </property>
          <property
-               name="applicationCSS"
-               value="platform:/plugin/org.ancit.sample.eap/css/default.css">
-         </property>
-         <property
                name="appName"
                value="org.ancit.sample.eap">
          </property>
@@ -24,7 +20,24 @@
                name="rendererFactoryUri"
                value="bundleclass://org.ancit.sample.eap.renderer.swt/org.ancit.sample.eap.renderer.swt.MyRendererFactory">
          </property>
+         <property
+               name="cssTheme"
+               value="org.ancit.sample.eap.theme.default">
+         </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/MyTheme.css"
+            id="org.ancit.sample.eap.theme.mytheme"
+            label="Mytheme">
+      </theme>
+      <theme
+            basestylesheeturi="css/default.css"
+            id="org.ancit.sample.eap.theme.default"
+            label="Default">
+      </theme>
    </extension>
 
 </plugin>

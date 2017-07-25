@@ -14,13 +14,15 @@ public class MyRendererFactory extends WorkbenchRendererFactory {
 
 	    @Override
 	    public AbstractPartRenderer getRenderer(MUIElement uiElement, Object parent) {
-	    	 if (uiElement instanceof MPart) {
+	    	System.out.println(uiElement);
+	    	 if (uiElement instanceof MPart ) {
 	             if (partRenderer == null) {
 	                 partRenderer = new MyPartRenderer();
 	                 super.initRenderer(partRenderer);
 	             }
 	             return partRenderer;
-	         } else if (uiElement instanceof MPartStack) {
+	         } else 
+	    	if (uiElement instanceof MPartStack) {
 	             if (stackRenderer == null) {
 	                 stackRenderer = new MyStackRenderer();
 	                 super.initRenderer(stackRenderer);
