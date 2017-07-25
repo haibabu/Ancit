@@ -17,7 +17,7 @@ public class MyServiceAddon {
 	@Inject
 	@Optional
 	public void applicationStarted(
-			@UIEventTopic(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE) Event event) {
+	@UIEventTopic(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE) Event event) {
 		
 		System.out.println("Application Loaded successfully...");
 	}

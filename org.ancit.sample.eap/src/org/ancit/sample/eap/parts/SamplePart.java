@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.di.Persist;
 import org.eclipse.e4.ui.model.application.ui.MDirtyable;
+import org.eclipse.e4.ui.services.EMenuService;
 import org.eclipse.jface.viewers.ArrayContentProvider;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
@@ -22,6 +23,9 @@ public class SamplePart {
 
 	private Text txtInput;
 	private TableViewer tableViewer;
+	
+	@Inject
+	EMenuService service;
 
 	@Inject
 	private MDirtyable dirty;
@@ -45,6 +49,8 @@ public class SamplePart {
 		tableViewer.setContentProvider(ArrayContentProvider.getInstance());;
 		tableViewer.setInput(createInitialDataModel());
 		tableViewer.getTable().setLayoutData(new GridData(GridData.FILL_BOTH));
+		
+		service.registerContextMenu(tableViewer.getControl(), "org.ancit.sample.eap.popupmenu.0");
 	}
 
 	@Focus

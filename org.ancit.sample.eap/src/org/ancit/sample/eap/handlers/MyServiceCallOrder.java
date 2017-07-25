@@ -15,9 +15,6 @@ public class MyServiceCallOrder {
 	@Inject
 	MyService service;
 
-	public MyServiceCallOrder() {
-	}
-
 	@Inject
 	public MyServiceCallOrder(final MyService service) {
 		System.out.println("Constructor: " + service.getMyService());
