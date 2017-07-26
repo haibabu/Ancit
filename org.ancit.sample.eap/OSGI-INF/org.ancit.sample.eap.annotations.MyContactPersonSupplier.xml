@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.ancit.sample.eap.annotations.MyContactPersonSupplier">
+   <property name="dependency.injection.annotation" value="org.ancit.sample.eap.annotations.Person"/>
+   <service>
+      <provide interface="org.eclipse.e4.core.di.suppliers.ExtendedObjectSupplier"/>
+   </service>
+   <implementation class="org.ancit.sample.eap.annotations.MyContactPersonSupplier"/>
+</scr:component>

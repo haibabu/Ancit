@@ -12,13 +12,13 @@ public class MyAnnotation {
 	
 	
 	@Execute
-	public void execute(@Prefix(prefix = "My Prefix")MyService myservice) {
+	public void execute(@Prefix(prefix = "The Great")MyService myservice) {
 		System.out.println(myservice.getMyService());
 		System.out.println(myservice.getPrefix());
 	}
 	
 	@PostConstruct
-	public void construct(@Prefix(prefix="My Prefix") MyService myservice)
+	public void construct(@Prefix(prefix="My Great...") MyService myservice)
 	{
 		System.out.println(myservice.getPrefix());
 		System.out.println(myservice.getMyService());
