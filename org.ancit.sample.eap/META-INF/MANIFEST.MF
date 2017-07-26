@@ -29,3 +29,5 @@ Service-Component: OSGI-INF/org.ancit.sample.eap.handlers.MyServiceAnnotationSup
  OSGI-INF/org.ancit.sample.eap.annotations.MyContactPersonSupplier.xml
 Import-Package: javax.inject;version="1.0.0"
 Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/org.ancit.sample.eap.handlers.MyServiceAnnotationSupplier.xml,
+ OSGI-INF/org.ancit.sample.eap.annotations.MyContactPersonSupplier.xml
