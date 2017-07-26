@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_mc5yYHA5Eee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_5RbBUHA5Eee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.trimmedwindow.test" label="Test">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Kl0AoHBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_NCvWEHBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.perspective" label="Perspective" iconURI="">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_OHcUUHBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.partsashcontainer.0">
+          <children xsi:type="basic:PartStack" xmi:id="_UQmq8HBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.partstack.0">
+            <children xsi:type="advanced:Placeholder" xmi:id="_VQmIUHBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.view" accessibilityPhrase="test" ref="_SKwYwHBCEee8IKKUERjBNg"/>
+            <children xsi:type="basic:Part" xmi:id="_4t3AQHBEEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.part.thisise4part" label="This is e4 Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_Wqi2cHBFEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_ZKm_cHBFEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.menu.mymenu" label="My Menu">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_a03h0HBFEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.directmenuitem.new" label="New"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_cDG2kHBFEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.directmenuitem.open" label="Open"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_xXN1EHFQEeeJWYOUYKQwLg" elementId="org.ancit.sample.rcp.eap.handledmenuitem.mye4menu" label="My e4 Menu" command="_dtNIkHFQEeeJWYOUYKQwLg"/>
+      </children>
+    </mainMenu>
+    <sharedElements xsi:type="basic:Part" xmi:id="_SKwYwHBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="My View" iconURI="" closeable="true">
+      <tags>View</tags>
+      <menus xmi:id="_SKwYwXBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.view">
+        <tags>ViewMenu</tags>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_TxS5EHFQEeeJWYOUYKQwLg" elementId="org.ancit.sample.rcp.eap.directmenuitem.testmenu" label="Test Menu"/>
+      </menus>
+      <toolbar xmi:id="_SKwYwnBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.view"/>
+    </sharedElements>
+  </children>
+  <handlers xmi:id="_cy4OUHFQEeeJWYOUYKQwLg" elementId="org.ancit.sample.rcp.eap.handler.0" contributionURI="bundleclass://org.ancit.sample.rcp.eap/org.ancit.sample.rcp.eap.handlers.MyHandler" command="_dtNIkHFQEeeJWYOUYKQwLg"/>
+  <descriptors xmi:id="_QTtXkHBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.view" label="My View" iconURI="" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_QTtXkXBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.view">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_QTtXknBCEee8IKKUERjBNg" elementId="org.ancit.sample.rcp.eap.view"/>
+  </descriptors>
+  <commands xmi:id="_dtNIkHFQEeeJWYOUYKQwLg" elementId="org.ancit.sample.rcp.eap.command.mycommand" commandName="MyCommand"/>
+  <addons xmi:id="_mc5yYXA5Eee8IKKUERjBNg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_mc5yYnA5Eee8IKKUERjBNg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_mc5yY3A5Eee8IKKUERjBNg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_mc5yZHA5Eee8IKKUERjBNg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_mc5yZXA5Eee8IKKUERjBNg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_mc5yZnA5Eee8IKKUERjBNg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_mc5yZ3A5Eee8IKKUERjBNg" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>

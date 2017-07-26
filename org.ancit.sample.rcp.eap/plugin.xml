@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.ancit.sample.rcp.eap.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="org.ancit.sample.rcp.eap.Perspective"
+            id="org.ancit.sample.rcp.eap.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="View"
+            class="org.ancit.sample.rcp.eap.View"
+            id="org.ancit.sample.rcp.eap.view">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.ancit.sample.rcp.eap.application"
+            name="org.ancit.sample.rcp.eap">
+         <property
+               name="appName"
+               value="org.ancit.sample.rcp.eap">
+         </property>
+         <property
+               name="applicationXMI"
+               value="org.ancit.sample.rcp.eap/Application.e4xmi">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

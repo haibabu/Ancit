@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eap
+Bundle-SymbolicName: org.ancit.sample.rcp.eap;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.ancit.sample.rcp.eap.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.11.1",
+ org.eclipse.equinox.ds;bundle-version="1.4.400",
+ org.eclipse.e4.core.di,
+ org.eclipse.swt
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: javax.inject;version="1.0.0"
+Bundle-ActivationPolicy: lazy
