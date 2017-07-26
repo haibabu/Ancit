@@ -17,7 +17,7 @@ public class AddressBook {
 
 	public Contact getContactByName(String name) {
 		for (Contact contact : contacts) {
-			if (contact.getName().equals(name)) {
+			if (contact.getName().equalsIgnoreCase(name)) {
 				return contact;
 			}
 		}

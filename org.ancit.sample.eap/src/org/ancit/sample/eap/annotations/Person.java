@@ -1,16 +1,16 @@
 package org.ancit.sample.eap.annotations;
 
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
+@javax.inject.Qualifier
 @Documented
 @Retention(RUNTIME)
-@Target({ FIELD, METHOD })
+@Target({ElementType.FIELD,ElementType.PARAMETER})
 public @interface Person {
 
 	String name();

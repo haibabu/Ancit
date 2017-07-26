@@ -19,7 +19,6 @@ public class MyContactPersonSupplier extends ExtendedObjectSupplier {
 	@Override
 	public Object get(IObjectDescriptor descriptor, IRequestor requestor, boolean track, boolean group) {
 		Person person = descriptor.getQualifier(Person.class);
-
 		Contact contactPerson = addressBook.getContactByName(person.name());
 		return contactPerson;
 	}

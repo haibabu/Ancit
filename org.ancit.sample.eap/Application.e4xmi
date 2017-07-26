@@ -30,6 +30,7 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_vn0H4HDrEeeLMbSltPyK_Q" elementId="org.ancit.sample.eap.handledmenuitem.newwizard" label="New Wizard" command="_1EPw0HDqEeeLMbSltPyK_Q"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_wEMQIHESEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.handledmenuitem.annotation" label="Annotation" command="_ih_2cHESEeeJWYOUYKQwLg"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_QPxA8HEtEeeJWYOUYKQwLg" elementId="org.ancit.sample.eap.handledmenuitem.themeswitch" label="Theme Switch" command="_ud2loHEsEeeJWYOUYKQwLg"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_g47EUHIZEeeQe9xGVB6NRg" elementId="org.ancit.sample.eap.directmenuitem.contactperson" label="Contact Person" contributionURI="bundleclass://org.ancit.sample.eap/org.ancit.sample.eap.handlers.ContactPerson"/>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="org.ancit.sample.eap.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>

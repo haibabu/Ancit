@@ -1,6 +1,9 @@
 package org.ancit.sample.eap;
 
 import org.ancit.sample.eap.handlers.MyService;
+import org.ancit.sample.eap.model.AddressBook;
+import org.ancit.sample.eap.model.AddressBookModelProvider;
+import org.ancit.sample.eap.model.Contact;
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.ui.workbench.lifecycle.PostContextCreate;
@@ -31,6 +34,10 @@ public class E4LifeCycle {
 
 		MyService service=ContextInjectionFactory.make(MyService.class, workbenchcontext);
 		workbenchcontext.set(MyService.class, service);
+		
+		AddressBook addressBook=ContextInjectionFactory.make(AddressBook.class, workbenchcontext);
+		AddressBookModelProvider.INSTANCE.updateAddressBook(addressBook);
+		workbenchcontext.set(AddressBook.class, addressBook);
 		
 		}
 	
