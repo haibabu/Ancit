@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_t6rtEHQfEee6Hojzt9tH-w">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_vI3XcHQfEee6Hojzt9tH-w" featurename="children" parentElementId="org.ancit.sample.e4.partstack.sample">
+    <elements xsi:type="basic:Part" xmi:id="_3aa98HQfEee6Hojzt9tH-w" elementId="org.ancit.sample.e4.fragment.part.myextendedpart" label="My Extended Part"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_I461IHQgEee6Hojzt9tH-w" featurename="children" parentElementId="org.eclipse.ui.main.toolbar">
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_PI3JMHQgEee6Hojzt9tH-w" elementId="org.ancit.sample.e4.fragment.directtoolitem.myexttool" label="My Ext Tool" contributionURI="bundleclass://org.ancit.sample.e4.fragment/org.ancit.sample.e4.fragment.MyToolItem"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5NSjwHRhEee6Hojzt9tH-w" featurename="toolbar" parentElementId="org.ancit.sample.e4.part.sample">
+    <elements xsi:type="menu:ToolBar" xmi:id="_UuvocHR0EeemesTSn_lq9w" elementId="org.ancit.sample.e4.fragment.toolbar.0">
+      <children xsi:type="menu:DirectToolItem" xmi:id="_VyzGcHR0EeemesTSn_lq9w" elementId="org.ancit.sample.e4.fragment.directtoolitem.new" label="New" contributionURI="bundleclass://org.ancit.sample.e4.fragment/org.ancit.sample.e4.fragment.NewHandler"/>
+      <children xsi:type="menu:DirectToolItem" xmi:id="_XRn04HR0EeemesTSn_lq9w" elementId="org.ancit.sample.e4.fragment.directtoolitem.open" label="Open" contributionURI="bundleclass://org.ancit.sample.e4.fragment/org.ancit.sample.e4.fragment.OpenHandler"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
